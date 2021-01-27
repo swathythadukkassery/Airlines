@@ -15,6 +15,5 @@ with open('airlines.csv', 'r') as f:
     Keymax = max(d, key=d.get) 
     Keymin = min(d, key=d.get)
     final_d = {Keymax.replace('"',''):d[Keymax], Keymin.replace('"',''):d[Keymin]}
-    print (final_d)
     final = json.dumps(final_d)
     print(final)
